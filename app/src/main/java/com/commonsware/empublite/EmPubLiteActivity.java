@@ -34,14 +34,16 @@ public class EmPubLiteActivity extends Activity {
             case android.R.id.home: return(true);
 //                                    break;
             case R.id.about: Intent i = new Intent(this, SimpleContentActivity.class);
+                             i.putExtra(SimpleContentActivity.EXTRA_FILE, "file:///android_asset/misc/about.html");
                              startActivity(i);
                              return true;
 //                             break;
             case R.id.help:
                             i = new Intent(this, SimpleContentActivity.class);
+                            i.putExtra(SimpleContentActivity.EXTRA_FILE, "file:///android_asset/misc/help.html");
                             startActivity(i);
-                              return(true);
-//                            break;
+                            return(true);
+//                          break;
         }
         return super.onOptionsItemSelected(item);
     }
