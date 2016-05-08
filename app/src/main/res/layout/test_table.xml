@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:stretchColumns="1">
+
+    <TableRow>
+        <TextView
+            android:text="New Text1"
+            android:layout_marginLeft="4dip"
+            android:id="@+id/textView4" />
+
+        <EditText
+            android:id="@+id/editText4"
+            android:layout_span="3"
+            android:inputType="text"
+         />
+
+    </TableRow>
+
+    <TableRow>
+        <Button
+            android:id="@+id/btn1"
+            android:text="Okay"/>
+        <Button
+            android:id="@+id/btn2"
+            android:layout_span="3"
+            android:text="Cancel"/>
+    </TableRow>
+
+</TableLayout>
